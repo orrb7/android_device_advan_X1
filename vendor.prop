@@ -137,6 +137,9 @@ ro.hardware.kmsetkey=trustonic
 ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Media
 debug.stagefright.c2inputsurface=-1
 debug.mediatek.disp_decompress=1
