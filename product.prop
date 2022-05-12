@@ -3,3 +3,6 @@ persist.sys.activity_anim_perf_override=true
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# Skia tracing
+debug.hwui.skia_atrace_enabled=false
