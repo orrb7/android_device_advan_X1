@@ -154,6 +154,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayX1 \
+    SettingsOverlayX1 \
     SystemUIOverlayX1 \
     TetheringOverlayX1 \
     WifiOverlayX1
