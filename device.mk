@@ -158,6 +158,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayX1 \
+    PowerOffAlarmOverlayX1 \
     SettingsOverlayX1 \
     SystemUIOverlayX1 \
     TetheringOverlayX1 \
