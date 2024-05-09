@@ -1,2 +1,5 @@
 # Fingerprint
 /data/gf_data(/.*)? u:object_r:fingerprint_data_file:s0
+
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr    u:object_r:hal_power_default_exec:s0
