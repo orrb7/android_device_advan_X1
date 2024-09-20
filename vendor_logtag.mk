@@ -261,3 +261,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.GPUAUX=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.HWUI=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.FrameTracker=$(VENDOR_LOG_LEVEL)
+
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.log.tag=I
+endif
