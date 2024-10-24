@@ -35,6 +35,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/etc/init/init.thermal_core.rc': blob_fixup()
+        .regex_replace('ro.vendor.mtk_thermal_2_0', 'vendor.thermal.link_ready'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
