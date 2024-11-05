@@ -11,6 +11,10 @@ genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0064/power_supply(/.*)
 genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0064/power_supply/cw-bat/type                                        u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/11f00000.i2c/i2c-7/7-006a/power_supply/sc854x-standalone                                  u:object_r:sysfs_power_supply:s0
 
+# Memory
+genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_factor:s0
+genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
+
 # Touchpanel
 genfscon sysfs /devices/platform/common_node/gesture                                                      u:object_r:vendor_sysfs_touchpanel:s0
 
