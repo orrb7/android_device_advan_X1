@@ -49,7 +49,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_getNativeHandle')
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
-        .clear_symbol_version('AHardwareBuffer_unlock'),
+        .clear_symbol_version('AHardwareBuffer_unlock')
+        .add_needed('libbase_shim.so'),
+    ('vendor/lib/libsysenv.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
