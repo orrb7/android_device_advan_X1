@@ -971,13 +971,3 @@ on property:persist.vendor.mediatek.fast_charging.support=*
 # FPSGO FBT Game
 on boot
     insmod /vendor/lib/modules/fpsgo.ko
-
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
-
-
