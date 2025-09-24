@@ -109,7 +109,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6789.vendor_ramdisk \
     fstab.zram \
     init.connectivity.rc \
-    init.modem.rc \
     init.mt6789.rc \
     init.mt6789.power.rc \
     init.mt6789.usb.rc \
