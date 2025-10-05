@@ -964,13 +964,6 @@ on property:persist.vendor.mediatek.fg.log.enable=1
 on property:sys.boot_completed=1
     restart android-hardware-media-c2-hal-1-2
 
-# add loghidl client
-service loghidlsysservice /system/bin/loghidlsysservice
-    class main
-    user root
-    group system
-    disabled
-
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
     class core
