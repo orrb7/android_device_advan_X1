@@ -12,3 +12,6 @@ vendor.usbsph.ul.pcm.dump=0
 vendor.usbsph.srcaws.pcm.dump=0
 vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
+
+# Bluetooth
+ro.vendor.mtk.bt_sap_enable=true
