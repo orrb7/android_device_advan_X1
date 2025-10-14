@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# DRM (Clearkey)
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
