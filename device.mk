@@ -54,7 +54,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
-    init.recovery.mt6789.rc
+    init.cgroup.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6789.rc \
+    init.mt6789.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.mt6789.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6789.rc
+
+# Modules
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg
 
 # Permissions
 PRODUCT_COPY_FILES += \
