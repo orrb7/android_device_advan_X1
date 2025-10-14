@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mt6789.rc
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # Modules
 PRODUCT_PACKAGES += \
     init.insmod.sh \
