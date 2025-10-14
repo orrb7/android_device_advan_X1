@@ -181,5 +181,15 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    wpa_supplicant \
+    hostapd \
+    libwifi-hal-wrapper \
+    android.hardware.wifi-service
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/advan/X1/X1-vendor.mk)
