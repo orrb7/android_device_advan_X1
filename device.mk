@@ -44,7 +44,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
-    fstab.mt6789.vendor_ramdisk
+    fstab.mt6789.vendor_ramdisk \
+    init.recovery.mt6789.rc
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
