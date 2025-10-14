@@ -126,6 +126,7 @@ debug.sf.enable_hwc_vds=0
 debug.sf.hwc.min.duration=23000000
 debug.sf.late.app.duration=20000000
 debug.sf.late.sf.duration=27600000
+debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=6000
 debug.sf.set_touch_timer_ms=5000
 debug.sf.use_content_detection_for_refresh_rate=false
