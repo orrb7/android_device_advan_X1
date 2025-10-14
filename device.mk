@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
