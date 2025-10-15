@@ -547,6 +547,11 @@ vendor/etc/mpe.conf
 # Camera Firmware
 vendor/firmware/lib3a.ccu
 
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1e_1_hdr.bin
+
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
