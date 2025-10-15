@@ -1,0 +1,5 @@
+# All blobs are from ADVAN_X1-user 14 UP1A.231005.007 1741073556 release-keys unless noted or pinned
+
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
