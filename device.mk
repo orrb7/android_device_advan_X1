@@ -72,6 +72,11 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek-mali
+
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
