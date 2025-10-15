@@ -29,6 +29,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
+    'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
+        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
