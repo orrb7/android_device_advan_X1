@@ -28,6 +28,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcamera_metadata_shim.so'),
     'vendor/lib64/mt6789/libmtkcam_stdutils.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
