@@ -103,6 +103,12 @@ ro.netflix.bsp_rev=MTK6789-35965-1
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
+# GNSS
+ro.vendor.gps.chrdev=gps_drv_stp
+ro.vendor.mtk_agps_app=1
+ro.vendor.mtk_gps_support=1
+ro.vendor.mtk_log_hide_gps=0
+
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=trustonic
