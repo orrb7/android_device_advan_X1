@@ -173,7 +173,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    android.hardware.sensors@2.0-subhal-impl-1.0
+    android.hardware.sensors@2.0-subhal-impl-1.0 \
+    sensors.dynamic_sensor_hal
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
