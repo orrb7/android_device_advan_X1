@@ -40,6 +40,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/etc/init/init.thermal_core.rc': blob_fixup()
         .regex_replace('ro.vendor.mtk_thermal_2_0', 'vendor.thermal.link_ready'),
+    'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
+        .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

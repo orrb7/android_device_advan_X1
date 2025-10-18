@@ -122,6 +122,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc) \
+
 # Modules
 PRODUCT_PACKAGES += \
     init.insmod.sh \

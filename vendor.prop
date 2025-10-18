@@ -109,6 +109,21 @@ ro.hardware.kmsetkey=trustonic
 ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 
+# Media
+debug.mediatek.disp_decompress=1
+media.c2.dmabuf.padding=3072
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.mtk_sec_video_path_support=0
+ro.vendor.mtk_video_hevc_enc_support=1
+ro.vendor.mtk.c2.vdec.fmt.support.level=1
+ro.vendor.pref_scale_enable_cfg=1
+vendor.media.heif.highThreshold=20
+vendor.media.heif.feature.off=1
+vendor.mtk_thumbnail_optimization=true
+vendor.mtk.vdec.waitkeyframeforplay=9
+
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
