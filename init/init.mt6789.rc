@@ -116,6 +116,9 @@ on charger
     # Stop bootprof
     write /proc/bootprof "0"
 
+    # Start powerhal
+    setprop vendor.powerhal.init 1
+
 on early-fs
     write /proc/bootprof "INIT:early-fs"
 

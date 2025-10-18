@@ -734,6 +734,11 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# Power
+vendor/etc/task_profiles.json
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+
 # Sensors
 vendor/firmware/remoteproc_scp
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6789.so
