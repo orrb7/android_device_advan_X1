@@ -27,6 +27,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcamera_metadata_shim.so'),
     'vendor/lib64/mt6789/libmtkcam_stdutils.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
+        .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
