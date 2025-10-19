@@ -42,6 +42,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
+    'vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
