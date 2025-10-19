@@ -49,6 +49,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/mtkfusionrild' : blob_fixup()
         .add_needed('libutils-v32.so'),
     'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/etc/init/init.thermal_core.rc': blob_fixup()
         .regex_replace('ro.vendor.mtk_thermal_2_0', 'vendor.thermal.link_ready'),
@@ -59,6 +60,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
     'vendor/etc/libnfc-hal-st.conf': blob_fixup()
         .regex_replace('STNFC_FW_DEBUG_ENABLED=1', 'STNFC_FW_DEBUG_ENABLED=0'),
+    ('vendor/bin/mnld', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
