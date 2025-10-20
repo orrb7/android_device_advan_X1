@@ -148,6 +148,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6789
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
