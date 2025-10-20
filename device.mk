@@ -106,6 +106,7 @@ $(call inherit-product, vendor/mediatek/ims/ims.mk)
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
+    fstab.zram \
     init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
