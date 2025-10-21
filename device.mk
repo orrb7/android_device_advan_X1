@@ -100,8 +100,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek-recovery
 
 # IMS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Init
 PRODUCT_PACKAGES += \
@@ -160,7 +159,6 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayX1 \
     SettingsOverlayX1 \
     SystemUIOverlayX1 \
-    TelephonyOverlayX1 \
     TetheringOverlayX1 \
     WifiOverlayX1
 
