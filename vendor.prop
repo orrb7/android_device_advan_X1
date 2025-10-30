@@ -216,6 +216,10 @@ vendor.rild.libargs=-d /dev/ttyC0
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.enable_frame_rate_override=false
