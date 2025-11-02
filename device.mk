@@ -42,16 +42,16 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.audio@7.0-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.soundtrigger@2.3-impl:64 \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    android.hardware.bluetooth.audio-impl
+    audio.bluetooth.default:64 \
+    audio.r_submix.default:64 \
+    audio.usb.default:64 \
+    android.hardware.bluetooth.audio-impl:64
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -83,15 +83,15 @@ PRODUCT_PACKAGES += \
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd
+    fastbootd:64
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.1-service:64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl\
+    android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
 # Health
@@ -211,10 +211,10 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):power-ext-advan)
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
-    libmtkperf_client \
-    libpowerhalwrap_vendor
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub:64 \
+    libmtkperf_client_vendor:64 \
+    libmtkperf_client:64 \
+    libpowerhalwrap_vendor:64
 
 # Power configurations
 PRODUCT_COPY_FILES += \
@@ -230,7 +230,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     android.hardware.sensors@2.0-subhal-impl-1.0 \
-    sensors.dynamic_sensor_hal
+    sensors.dynamic_sensor_hal:64
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -265,7 +265,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
-    libwifi-hal-wrapper \
+    libwifi-hal-wrapper:64 \
     android.hardware.wifi-service
 
 PRODUCT_COPY_FILES += \
