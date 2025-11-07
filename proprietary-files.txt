@@ -548,6 +548,10 @@ vendor/etc/mpe.conf
 # Camera Firmware
 vendor/firmware/lib3a.ccu
 
+# Chipinfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/etc/init/init.connfem.rc
