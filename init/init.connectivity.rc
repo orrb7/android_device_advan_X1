@@ -1,8 +1,6 @@
 # MTK connectivity .rc configure
 
 on post-fs-data
-    mkdir /data/vendor/stp_dump 0755 system system
-    mkdir /data/vendor/connsyslog 0755 system system
 
     # GPS
     mkdir /data/vendor/gps 0770 gps system
