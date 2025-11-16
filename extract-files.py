@@ -48,6 +48,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
         .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default')
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
+    'vendor/etc/libnfc-hal-st.conf': blob_fixup()
+        .regex_replace('STNFC_FW_DEBUG_ENABLED=1', 'STNFC_FW_DEBUG_ENABLED=0'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
