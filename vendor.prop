@@ -122,6 +122,7 @@ ro.vendor.mtk.c2.vdec.fmt.support.level=1
 ro.vendor.pref_scale_enable_cfg=1
 vendor.media.heif.highThreshold=20
 vendor.media.heif.feature.off=1
+vendor.media.omx=0
 vendor.mtk_thumbnail_optimization=true
 vendor.mtk.vdec.waitkeyframeforplay=9
 
