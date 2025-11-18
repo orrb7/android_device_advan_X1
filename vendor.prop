@@ -47,6 +47,7 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
+ro.odm.camera=1
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.camera3.zsl.default=260
 ro.vendor.mtk_cam_security_support=0
