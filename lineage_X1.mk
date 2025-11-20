@@ -26,5 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=ADVAN/ADVAN_X1/ADVAN_X1:14/UP1A.231005.007/1741067669:user/release-keys \
     DeviceName=6781 \
     DeviceProduct=ADVAN_X1 \
-    SystemDevice=6781 \
+    SystemDevice=ADVAN_X1 \
     SystemName=ADVAN_X1
