@@ -70,7 +70,6 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,64N2
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -154,6 +153,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6789

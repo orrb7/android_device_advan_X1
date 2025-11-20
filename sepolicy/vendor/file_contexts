@@ -1,0 +1,2 @@
+# Fingerprint
+/data/gf_data(/.*)? u:object_r:fingerprint_data_file:s0
