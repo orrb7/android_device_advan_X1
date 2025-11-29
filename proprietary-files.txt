@@ -1,4 +1,4 @@
-# All blobs are from ADVAN_X1-user 14 UP1A.231005.007 1741073556 release-keys unless noted or pinned
+# All blobs are from ADVAN_X1-user 14 UP1A.231005.007 1751475349 release-keys unless noted or pinned
 
 # AEE
 vendor/lib/libaedv.so
@@ -359,6 +359,7 @@ vendor/lib64/mt6789/libcameracustom.camera.3a.so;SYMLINK=vendor/lib64/libcamerac
 vendor/lib64/mt6789/libcameracustom.camera.isp.so;SYMLINK=vendor/lib64/libcameracustom.camera.isp.so
 vendor/lib64/mt6789/libcameracustom.camera.sensors.so;SYMLINK=vendor/lib64/libcameracustom.camera.sensors.so
 vendor/lib64/mt6789/libcameracustom.camera_exif.so;SYMLINK=vendor/lib64/libcameracustom.camera_exif.so
+vendor/lib64/mt6789/libcameracustom.eis.so;SYMLINK=vendor/lib64/libcameracustom.eis.so
 vendor/lib64/mt6789/libcameracustom.flashlight.so;SYMLINK=vendor/lib64/libcameracustom.flashlight.so
 vendor/lib64/mt6789/libcameracustom.lens.so;SYMLINK=vendor/lib64/libcameracustom.lens.so
 vendor/lib64/mt6789/libcameracustom.plugin.so;SYMLINK=vendor/lib64/libcameracustom.plugin.so
@@ -370,6 +371,7 @@ vendor/lib64/mt6789/libfeature.face.so;SYMLINK=vendor/lib64/libfeature.face.so
 vendor/lib64/mt6789/libfeature.stereo.provider.so;SYMLINK=vendor/lib64/libfeature.stereo.provider.so
 vendor/lib64/mt6789/libfeature.vsdof.hal.so;SYMLINK=vendor/lib64/libfeature.vsdof.hal.so
 vendor/lib64/mt6789/libfeature_3dnr.so;SYMLINK=vendor/lib64/libfeature_3dnr.so
+vendor/lib64/mt6789/libfeature_eis.so;SYMLINK=vendor/lib64/libfeature_eis.so
 vendor/lib64/mt6789/libfeature_fsc.so;SYMLINK=vendor/lib64/libfeature_fsc.so
 vendor/lib64/mt6789/libfeature_lmv.so;SYMLINK=vendor/lib64/libfeature_lmv.so
 vendor/lib64/mt6789/libfeature_rss.so;SYMLINK=vendor/lib64/libfeature_rss.so
@@ -773,10 +775,6 @@ vendor/lib/mt6789/libvcodec_utility_v3a.so;SYMLINK=vendor/lib/libvcodec_utility_
 vendor/lib/mt6789/libvcodecdrv.so;SYMLINK=vendor/lib/libvcodecdrv.so
 vendor/lib/mt6789/libvcodecdrv_v3a.so;SYMLINK=vendor/lib/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib/libvpudv3a_vcodec.so
-vendor/lib/AVCSecureVdecCA.so
-vendor/lib/HEVCSecureVdecCA.so
-vendor/lib/VP9SecureVdecCA.so
-vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libbwc.so
 vendor/lib/libh264dec_customize.so
@@ -796,10 +794,6 @@ vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
-vendor/lib64/AVCSecureVdecCA.so
-vendor/lib64/HEVCSecureVdecCA.so
-vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so

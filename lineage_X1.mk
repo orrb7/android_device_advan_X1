@@ -22,8 +22,8 @@ PRODUCT_MODEL := 6781
 PRODUCT_GMS_CLIENTID_BASE := android-advandigital
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="ADVAN_X1-user 14 UP1A.231005.007 1741067669 release-keys" \
-    BuildFingerprint=ADVAN/ADVAN_X1/ADVAN_X1:14/UP1A.231005.007/1741067669:user/release-keys \
+    BuildDesc="ADVAN_X1-user 14 UP1A.231005.007 1751475349 release-keys" \
+    BuildFingerprint=ADVAN/ADVAN_X1/ADVAN_X1:14/UP1A.231005.007/1751475349:user/release-keys \
     DeviceName=6781 \
     DeviceProduct=ADVAN_X1 \
     SystemDevice=ADVAN_X1 \
