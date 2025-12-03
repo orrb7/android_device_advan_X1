@@ -19,6 +19,9 @@ genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon/extcon0/cable.1/name 
 genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_factor:s0
 genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
 
+# Proc
+genfscon proc /sys/kernel/sched_min_granularity_ns u:object_r:proc_sched:s0
+
 # Touchpanel
 genfscon sysfs /devices/platform/common_node/gesture                                                      u:object_r:vendor_sysfs_touchpanel:s0
 
