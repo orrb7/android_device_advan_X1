@@ -30,6 +30,7 @@ on init
     # pri S33NF3-29 add by xuejian 20240306 start
     chmod 0664 /sys/devices/platform/common_node/gesture
     chown root system /sys/devices/platform/common_node/gesture
+    chown system system /sys/devices/platform/common_node/gesture
     # pri S33NF3-29 add by xuejian 20240306 end
 
 on late-init
