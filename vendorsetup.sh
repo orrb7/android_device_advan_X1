@@ -2,13 +2,6 @@
 
 RET=0
 
-echo "- Applying MTK GED SKI support patches"
-cd frameworks/native
-curl https://github.com/blumengarten/frameworks_native/commit/41b67e7e9c24cfb7616e55245e12821ab0ef5711.patch | git am || {
-  RET=$?
-  git am --abort >/dev/null 2>&1
-}
-
 echo "- Applying fenrir compatiblity patches"
 cd system/core
 curl https://github.com/Nothing-2A/android_system_core/commit/8ff6e7a68523c3b870d8dcd5713c71ea15b43dd2.patch | git am || {
