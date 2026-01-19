@@ -2,3 +2,4 @@ type vendor_sysfs_touchpanel, fs_type, sysfs_type;
 
 allow hal_power_default vendor_sysfs_touchpanel:dir search;
 allow hal_power_default vendor_sysfs_touchpanel:file rw_file_perms;
+rw_dir_file(hal_power_default, sysfs_ged)
