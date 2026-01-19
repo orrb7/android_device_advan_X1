@@ -36,6 +36,10 @@ on init
     write /proc/sys/kernel/sched_min_granularity_ns 500000
     write /proc/sys/kernel/sched_wakeup_granularity_ns 2000000
 
+    # GPU tuning
+    write /sys/kernel/ged/hal/loading_base_dvfs_step 259
+    write /sys/kernel/ged/hal/dvfs_loading_mode 0
+
 on post-fs-data
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
