@@ -160,6 +160,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayX1 \
+    Launcher3OverlayX1 \
     NfcResOverlayX1 \
     PowerOffAlarmOverlayX1 \
     SettingsOverlayX1 \
