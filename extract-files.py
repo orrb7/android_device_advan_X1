@@ -25,8 +25,19 @@ namespace_imports = [
     'hardware/mediatek/libmtkperf_client',
 ]
 
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    (
+        'libneuron_graph_delegate.mtk',
+        'libtflite_mtk',
+        'vendor.mediatek.hardware.apuware.apusys@2.0',
+        'vendor.mediatek.hardware.apuware.apusys@2.1',
+        'vendor.mediatek.hardware.apuware.hmp@1.0',
+        'vendor.mediatek.hardware.apuware.utils@2.0',
+    ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
