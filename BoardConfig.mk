@@ -52,6 +52,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ADVAN_X1,6781
 
+# Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6789
 TARGET_NO_BOOTLOADER := true
@@ -203,7 +206,8 @@ BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
+	$(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

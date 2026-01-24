@@ -80,6 +80,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek
 
+# Dolby
+$(call inherit-product, vendor/sony/dolby/setup.mk)
+
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey
