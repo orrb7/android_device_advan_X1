@@ -134,7 +134,6 @@ on post-fs
 on boot
     setprop sys.usb.configfs 2
     setprop sys.usb.controller "musb-hdrc"
-    setprop vendor.usb.controller "musb-hdrc"
     setprop sys.usb.ffs.aio_compat 0
     write /sys/class/android_usb/android0/f_mtp/cpu_mask 0x80
     write /sys/module/usb_f_mtp/parameters/mtp_rx_cont 1
@@ -194,7 +193,6 @@ on charger
     write /config/usb_gadget/g1/configs/b.1/MaxPower 500
 
     setprop sys.usb.configfs 1
-    setprop vendor.usb.controller "musb-hdrc"
 
 on property:ro.bootmode=charger
     setprop sys.usb.config midi
