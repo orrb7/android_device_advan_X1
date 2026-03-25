@@ -1,5 +1,5 @@
 # Animation
-persist.sys.activity_anim_perf_override=true
+persist.sys.activity_anim_perf_override=false
 
 # Bluetooth
 bluetooth.device_id.vendor_id=0x0046
