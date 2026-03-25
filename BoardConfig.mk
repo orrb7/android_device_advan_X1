@@ -117,7 +117,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_USES_METADATA_PARTITION := true
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/infinty/config/BoardConfigReservedSize.mk
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600 #100MB
 
 # Partitions - Dynamic

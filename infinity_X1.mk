@@ -11,9 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/advan/X1/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_X1
+# Infinity X Flag
+INFINITY_MAINTAINER := Doo
+TARGET_HAS_UDFPS := false
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_X1
 PRODUCT_DEVICE := X1
 PRODUCT_MANUFACTURER := ADVAN
 PRODUCT_BRAND := ADVAN
