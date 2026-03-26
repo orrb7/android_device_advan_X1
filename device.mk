@@ -159,6 +159,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlayX1 \
     FrameworkResOverlayX1 \
     Launcher3OverlayX1 \
     NfcResOverlayX1 \
