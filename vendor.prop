@@ -222,7 +222,7 @@ ro.vendor.mtk.sensor.support=yes
 
 # ScrollOptimizer
 persist.sys.perf.scroll_opt=true
-persist.sys.perf.scroll_opt.heavy_app=2
+persist.sys.perf.scroll_opt.heavy_app=1
 
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
