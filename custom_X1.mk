@@ -10,8 +10,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/advan/X1/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
+
+# PixelOS flag
+PERF_ANIM_OVERRIDE := true
+TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_NAME := custom_X1
 PRODUCT_DEVICE := X1
