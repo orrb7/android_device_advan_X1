@@ -86,4 +86,13 @@
 
     <!-- Indicates that SAE Hash-to-Element is supported on this device -->
     <bool name="config_wifiSaeH2eSupported" translatable="false">true</bool>
+
+    <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
+    <string translatable="false" name="config_wifiP2pDeviceNamePrefix">ADVAN X1_</string>
+
+    <!-- Integer indicating maximum hardware supported client number of soft ap -->
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">10</integer>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default">ADVAN X1</string>
 </resources>
