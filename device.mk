@@ -287,5 +287,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Camera information
+AXION_CAMERA_REAR_INFO := 64
+AXION_CAMERA_FRONT_INFO := 8
+
+AXION_MAINTAINER := Doo
+
+# Processor name
+AXION_PROCESSOR := Mediatek_Helio_G100
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,75,90,120
+
+# Gms-setup
+TARGET_INCLUDE_GOOGLE_TELECOMM := true
+TARGET_INCLUDE_PARTNER_SETUP := true
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/advan/X1/X1-vendor.mk)
