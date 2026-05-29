@@ -308,5 +308,11 @@ TARGET_SUPPORTED_REFRESH_RATES := 60,75,90,120
 TARGET_INCLUDE_GOOGLE_TELECOMM := true
 TARGET_INCLUDE_PARTNER_SETUP := true
 
+PRODUCT_COPY_FILES += \
+    device/advan/X1/configs/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
+    device/advan/X1/configs/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
+    device/advan/X1/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
+    device/advan/X1/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/advan/X1/X1-vendor.mk)

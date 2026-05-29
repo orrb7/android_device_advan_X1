@@ -118,3 +118,6 @@
 # -------------------prize focal fingerprint durunshen egin -------------------
 /dev/focaltech_fp         0660   system     system
 # -------------------prize focal fingerprint durunshen end ---------------------
+
+# PMQoS cpu_dma_latency for AxBurstEngine
+/dev/cpu_dma_latency                    0664   system     system
