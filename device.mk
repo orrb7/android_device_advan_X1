@@ -94,6 +94,14 @@ $(call inherit-product, vendor/sony/dolby/setup.mk)
 # Pricam
 $(call inherit-product, vendor/advan/mt6789-common/device.mk)
 
+# Camera Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.manufacturer=Advan \
+    persist.vendor.camera.sensor=1 \
+    ro.vendor.camera.not.support.4k=0 \
+    persist.sys.camera.app=com.mediatek.camera \
+    ro.product.camera=PriCamera
+
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey

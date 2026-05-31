@@ -1,0 +1,26 @@
+# PriCamera - Stock Mediatek Camera
+type PriCamera, domain;
+app_domain(PriCamera)
+
+# Allow hal_camera_default to interact with PriCamera
+allow hal_camera_default priv_app:dir search;
+allow hal_camera_default priv_app:file { read open getattr };
+allow hal_camera_default PriCamera:app_data_file { read write open getattr };
+
+# Tambahan rule yang biasanya dibutuhkan MTK Camera
+allow hal_camera_default PriCamera:dir search;
+allow hal_camera_default PriCamera:file { read write open getattr ioctl };
+allow hal_camera_default PriCamera:process signal;
+
+# Izinkan PriCamera akses ke camera HAL
+allow PriCamera hal_camera_default:fd use;
+allow PriCamera hal_camera_default:dir search;
+allow PriCamera hal_camera_default:file { read write open getattr };
+
+# Mediatek Camera HAL common
+allow hal_camera_default mtk_hal_camera:process signal;
+allow hal_camera_default vendor_camera_prop:file read;
+
+# PriCamera access to mtkcam
+allow PriCamera mtkcam_data_file:dir search;
+allow PriCamera mtkcam_data_file:file { read write open getattr };
