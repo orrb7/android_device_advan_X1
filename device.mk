@@ -6,7 +6,7 @@
 # Inherit generic_ramdisk product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
--include vendor/lineage-priv/keys/keys.mk
+# -include vendor/lineage-priv/keys/keys.mk
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -77,8 +77,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek
 
-# Dolby
-$(call inherit-product, vendor/sony/dolby/setup.mk)
+# PriCamera
+$(call inherit-product, vendor/advan/advancamera-X1/device.mk)
+PRODUCT_PACKAGES += \
+    PriCamera
 
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
