@@ -91,8 +91,8 @@ PRODUCT_PACKAGES += \
 # Dolby
 $(call inherit-product, vendor/sony/dolby/setup.mk)
 
-# GameBar
-$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+# Pricam
+$(call inherit-product, vendor/advan/mt6789-common/device.mk)
 
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
