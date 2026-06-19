@@ -88,11 +88,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek
 
-# PriCamera
-$(call inherit-product, vendor/advan/advancamera-X1/device.mk)
-PRODUCT_PACKAGES += \
-    PriCamera
-
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey
@@ -292,6 +287,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # Wi-Fi
+$(call soong_config_set,wpa_supplicant_8,wifi_disable_wpa_version_3,true)
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
