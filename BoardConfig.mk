@@ -6,6 +6,9 @@
 DEVICE_PATH := device/advan/X1
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# DUMMY CONFIG
+TARGET_KERNEL_CONFIG := X1_defconfig
+
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
