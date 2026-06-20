@@ -22,6 +22,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/advan/X1',
     'hardware/mediatek',
+    'device/prize/camera',
     'hardware/mediatek/libmtkperf_client',
 ]
 
